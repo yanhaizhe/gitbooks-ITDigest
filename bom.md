@@ -30,3 +30,7 @@ Java处理带BOM的文本
 
 `Element e4 = (Element)doc1.selectSingleNode("/ResponseData/Body/RetDesc");`
 
+思路是：先按照UTF-8编码读取文件后，跳过前三个字符，重新构建一个新的字符串，然后用Dom4j解析处理，这样就不会报错了。 
+
+
+
