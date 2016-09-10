@@ -15,6 +15,6 @@ Java处理带BOM的文本
 下面举个例子，针对UTF-8的文件BOM做个处理 ：
 
 ```
-
+dString xmla = StringFileToolkit.file2String(new File("D:\projects\mailpost\src\a.xml"),"UTF-8");
 ```
 
