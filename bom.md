@@ -16,5 +16,8 @@ Java处理带BOM的文本
 
 ```
 dString xmla = StringFileToolkit.file2String(new File("D:\projects\mailpost\src\a.xml"),"UTF-8");
+d
 ```
+
+
 
