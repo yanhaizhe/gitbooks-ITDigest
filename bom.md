@@ -14,19 +14,7 @@ Java处理带BOM的文本
 
 下面举个例子，针对UTF-8的文件BOM做个处理 ：
 
-String xmla = StringFileToolkit.file2String\(new File\("D:\projects\mailpost\src\a.xml"\),"UTF-8"\);
+```
 
-byte\[\] b = xmla.getBytes\("UTF-8"\);
-
-String xml = new String\(b,3,b.length-3,"UTF-8"\);
-
-Document doc1 = DocumentHelper.parseText\(xml\);
-
-Element e1 = \(Element\)doc1.selectSingleNode\("\/ResponseData\/Body\/RetDesc"\);
-
-Element e2 = \(Element\)doc1.selectSingleNode\("\/ResponseData\/Head\/RespID"\);
-
-Element e3 = \(Element\)doc1.selectSingleNode\("\/ResponseData\/Body\/RetCode"\);
-
-Element e4 = \(Element\)doc1.selectSingleNode\("\/ResponseData\/Body\/RetDesc"\);
+```
 
