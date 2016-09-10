@@ -30,7 +30,11 @@ Java处理带BOM的文本
 
 `Element e4 = (Element)doc1.selectSingleNode("/ResponseData/Body/RetDesc");`
 
-思路是：先按照UTF-8编码读取文件后，跳过前三个字符，重新构建一个新的字符串，然后用Dom4j解析处理，这样就不会报错了。 
+思路是：先按照UTF-8编码读取文件后，跳过前三个字符，重新构建一个新的字符串，然后用Dom4j解析处理，这样就不会报错了。
 
+其他编码的方式处理思路类似，其实可以写一个通用的自动识别的BOM的工具，去掉BOM信息，返回字符串。
 
+不过这个处理过程已经有牛人解决过了：[http:\/\/koti.mbnet.fi\/akini\/java\/unicodereader\/](http://koti.mbnet.fi/akini/java/unicodereader/ "http://koti.mbnet.fi/akini/java/unicodereader/")
+
+-------------------------------------------------一下引用了百科
 
